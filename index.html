@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Interactive Web Page with JavaScript 🚀</h1>
+    <button id="themeToggle">🌙 Toggle Dark/Light</button>
+  </header>
+
+  <!-- Navigation Dropdown -->
+  <nav class="dropdown">
+    <button id="menuBtn">☰ Menu</button>
+    <ul id="menuList" class="hidden">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#register">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Welcome to the World of Interactivity 🌍</h2>
+    <p>
+      This demo shows how JavaScript brings life to websites. 
+      Explore features like dark mode, counters, collapsible FAQs, and form validation.
+    </p>
+    <button onclick="alert('Thanks for exploring! 🎉')">Get Started</button>
+  </section>
+
+  <!-- Features Overview -->
+  <section id="features">
+    <h2>Our Interactive Features ✨</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>🌙 Dark Mode</h3>
+        <p>Switch between light and dark themes instantly.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🎮 Counter Game</h3>
+        <p>Click the button to increase the counter value dynamically.</p>
+      </div>
+      <div class="feature-card">
+        <h3>❓ Collapsible FAQ</h3>
+        <p>Expand and collapse answers smoothly.</p>
+      </div>
+      <div class="feature-card">
+        <h3>📋 Form Validation</h3>
+        <p>Custom JavaScript validation for user-friendly input handling.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Counter -->
+  <section>
+    <h2>Counter Game 🎮</h2>
+    <button id="incrementBtn">+ Increment</button>
+    <p>Current Count: <span id="counterValue">0</span></p>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>FAQ ❓</h2>
+    <div class="faq-item">
+      <button class="faq-question">What is JavaScript?</button>
+      <div class="faq-answer">
+        <p>A programming language that makes web pages interactive.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Why use it?</button>
+      <div class="faq-answer">
+        <p>Because static websites are boring 😅.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Can I learn it easily?</button>
+      <div class="faq-answer">
+        <p>Yes! Start with small projects like this one 🚀.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section id="register">
+    <h2>Register Form 📋</h2>
+    <form id="registerForm" novalidate>
+      <label>
+        Name:
+        <input type="text" id="name" required />
+        <span class="error" id="nameError"></span>
+      </label>
+
+      <label>
+        Email:
+        <input type="email" id="email" required />
+        <span class="error" id="emailError"></span>
+      </label>
+
+      <label>
+        Password:
+        <input type="password" id="password" required />
+        <span class="error" id="passwordError"></span>
+      </label>
+
+      <button type="submit">Register</button>
+      <p id="formSuccess" class="success"></p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made with ❤️ using HTML, CSS & JavaScript | 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
